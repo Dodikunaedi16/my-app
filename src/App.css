@@ -1,0 +1,284 @@
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  padding: 1rem 2rem;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffeb3b;
+}
+
+.btn-login {
+  background: #ffeb3b;
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background: #ffd600;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 400px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.swiper-pagination {
+  bottom: 10px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+}
+
+/* Content */
+.content {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* Product Section */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.discount {
+  color: red;
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.best-seller {
+  background: red;
+  color: white;
+  padding: 5px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.affordable {
+  background: green;
+  color: white;
+  padding: 5px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.btn-discount {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-discount:hover {
+  background: darkred;
+}
+
+.btn-normal {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-normal:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: #343a40;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #00c6ff;
+}
+/* Styling untuk bagian Contact Form */
+.contact-form {
+  background-color: #f7f7f7;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4c90e0;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact-form button {
+  background-color: #4c90e0;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #3578b3;
+}
+
+.contact-form button:focus {
+  outline: none;
+}
